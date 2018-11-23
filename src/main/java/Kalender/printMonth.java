@@ -10,7 +10,7 @@ public class printMonth {
         DayOfWeek dayOfWeek = month.getDayOfWeek();
         int lengteMaand = month.getMonth().length(false);
 
-
+// determine on what index/day to start the month in the calender
         int index=0;
         switch (dayOfWeek) {
             case MONDAY:
@@ -34,8 +34,9 @@ public class printMonth {
             case SUNDAY:
                 index = 0;
                 break;
-
         }
+
+        // add days of month to calender
         int[][] monthKalender = new int[6][7];
         int dag = 1;
         for (int x = 0; x < 6; x++) {
@@ -46,6 +47,8 @@ public class printMonth {
                 }
             }
         }
+
+        // method to print
         for (int[] row :monthKalender) {
             printRow(row);
         }
