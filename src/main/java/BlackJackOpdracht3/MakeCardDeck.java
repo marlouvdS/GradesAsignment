@@ -10,8 +10,8 @@ public class MakeCardDeck extends Card {
         super(value, icon);
     }
 
-    static String[] values = {"A", "king", "queen", "jack", "10", "9", "8", "7", "6", "5", "4", "3", "2"};
-    static String[] icons = {"♠", "♥", "♣", "♦"};
+    private static String[] values = {"A", "king", "queen", "jack", "10", "9", "8", "7", "6", "5", "4", "3", "2"};
+    private static String[] icons = {"♠", "♥", "♣", "♦"};
 
 
     static List CardDeck() {
@@ -33,6 +33,7 @@ public class MakeCardDeck extends Card {
         int points = 0;
         switch (card.getValue()) {
             case "A":
+                // nog een if statement tussen voor 1 en 11 punten;
                 points = 1;
                 break;
             case "queen":
