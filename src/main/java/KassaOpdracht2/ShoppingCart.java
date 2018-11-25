@@ -7,11 +7,15 @@ public class ShoppingCart extends Product {
         super(name, price);
     }
 
-    private static ArrayList<Product> shoppingCart = new ArrayList<>();
+    static ArrayList<Product> shoppingCart = new ArrayList<>();
 
     static void addProduct(Product product) {
         shoppingCart.add(product);
     }
+static void removeProduct(Product product){
+        shoppingCart.remove(product);
 
+
+}
 
 }

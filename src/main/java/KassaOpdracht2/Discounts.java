@@ -7,6 +7,6 @@ public class Discounts extends Product {
 
     double calculateDiscounts(){
 
-        return
+        return 0.0;
     }
 }

@@ -2,16 +2,21 @@ package KassaOpdracht2;
 
 public class main {
     public static void main(String[] args) {
-    Product robijn = new Product("Robijn", 3.0);
-    Product brinta = new Product("Brinta", 2.50);
-    Product chineseGroenten = new Product("Chinese groenten", 5.0);
-    Product kwark = new Product("Kwark", 2.0);
-    Product luiers =  new Product("Luiers", 10.0);
+        Product robijn = new Product("Robijn", 3.0);
+        Product brinta = new Product("Brinta", 2.50);
+        Product chineseGroenten = new Product("Chinese groenten", 5.0);
+        Product kwark = new Product("Kwark", 2.0);
+        Product luiers = new Product("Luiers", 10.0);
 
-    ShoppingCart.addProduct(robijn);
+        ShoppingCart.addProduct(robijn);
+        ShoppingCart.addProduct(brinta);
+        ShoppingCart.addProduct(kwark);
 
+        ShoppingCart.removeProduct(kwark);
+        System.out.println(Register.subTotal());
 
-}}
+    }
+}
 
 
 //    Ontwerp en bouw een supermarkt-implementatie volgens de concepten die je hebt geleerd met OO.
