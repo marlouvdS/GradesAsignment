@@ -24,10 +24,10 @@ public class main {
         ShoppingCart.addProduct(luiers);
         ShoppingCart.addProduct(luiers);
 
-
+ShoppingCart.viewCart();
 
         Register.subTotal();
-        Register.change(55);
+        Register.change(50);
 
     }
 }

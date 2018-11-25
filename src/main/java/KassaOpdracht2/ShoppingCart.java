@@ -16,5 +16,11 @@ import java.util.ArrayList;
     static void removeProduct(Product product) {
         shoppingCart.remove(product);
     }
+    static void viewCart (){
+        System.out.println("Shopping cart contains: ");
+        for (Product i: shoppingCart){
+            System.out.println(i.getName()+ "  "+ i.getPrice());
+        }
+    }
 
 }

@@ -53,7 +53,12 @@ public class Register extends ShoppingCart {
     static double change (double money){
         double subtotal = subTotal();
         double change = money-subtotal;
-        System.out.println("change is " +change);
-        return change;
+        if (change<0.0){
+            System.out.println("Payed too little!");
+        } else {
+            System.out.println("payed " + money);
+            System.out.println("change is " + change);
+
+        }return change;
     }
 }
