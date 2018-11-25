@@ -9,7 +9,6 @@ public class Register extends ShoppingCart {
     }
 
     static double subTotal() {
-
         LocalDate today = LocalDate.now();
         int robijns = 0;
         int luiers = 0;
@@ -20,13 +19,13 @@ public class Register extends ShoppingCart {
                 i.setPrice(1.0);
                 discount += 1.0;
             }
-            if (i.getName().equals("Robijn") {
+            if (i.getName().equals("Robijn")) {
+                robijns++;
                 if (robijns == 2) {
                     i.setPrice(1.14);
                     discount += 1.86;
                     robijns = 0;
                 } else {
-                    robijns++;
                     i.setPrice(3.0);
                 }
 
@@ -49,5 +48,12 @@ public class Register extends ShoppingCart {
         System.out.println("discount is "+discount);
         System.out.println("subtotal is "+subTotal);
         return subTotal;
+    }
+
+    static double change (double money){
+        double subtotal = subTotal();
+        double change = money-subtotal;
+        System.out.println("change is " +change);
+        return change;
     }
 }

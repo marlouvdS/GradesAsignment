@@ -14,15 +14,20 @@ public class main {
         ShoppingCart.addProduct(robijn);
         ShoppingCart.addProduct(robijn);
         ShoppingCart.addProduct(robijn);
+        ShoppingCart.addProduct(robijn);
+
         ShoppingCart.addProduct(brinta);
         ShoppingCart.addProduct(kwark);
         ShoppingCart.addProduct(luiers);
         ShoppingCart.addProduct(luiers);
         ShoppingCart.addProduct(luiers);
         ShoppingCart.addProduct(luiers);
+        ShoppingCart.addProduct(luiers);
 
 
-Register.subTotal();
+
+        Register.subTotal();
+        Register.change(55);
 
     }
 }
